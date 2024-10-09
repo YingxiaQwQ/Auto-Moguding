@@ -34,7 +34,7 @@ npm install
 | desc                  | 签到备注，可留空                                             |
 | type                  | 默认安卓，可以不用改                                         |
 | address               | 地址，一般填写签到后显示的地址，可自由发挥整活               |
-| longitude、latitude   | GPS定位经纬度，使用https://jingweidu.bmcx.com/网址查询       |
+| longitude、latitude   | GPS定位经纬度，使用 https://jingweidu.bmcx.com/ 网址查询       |
 | UA                    | 自定义UA，不知道可以不填                                     |
 | randomLocation        | 是否开启随机位置                                             |
 | token、userId、planId | 免登录所需值，不知道可以不填<br>若autoUpdate为true，脚本会自动填充以便下次登录 |

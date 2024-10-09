@@ -38,3 +38,9 @@ npm install
 | UA                    | 自定义UA，不知道可以不填                                     |
 | randomLocation        | 是否开启随机位置                                             |
 | token、userId、planId | 免登录所需值，不知道可以不填<br>若autoUpdate为true，脚本会自动填充以便下次登录 |
+
+4、保存修改，执行
+
+```
+npm start
+```

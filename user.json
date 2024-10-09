@@ -1,0 +1,22 @@
+[
+  {
+    "signIn": false,
+    "autoUpdate": true,
+    "phone": "17784649798",
+    "password": "Wcdma3586",
+    "country": "中国",
+    "province": "海南省",
+    "city": "海口市",
+    "area": "龙华区",
+    "desc": "",
+    "type": "android",
+    "address": "海南省 · 海口市 · 龙华区 · 在锦绣花园附近",
+    "longitude": "110.326964",
+    "latitude": "20.02760",
+    "UA": null,
+    "randomLocation": true,
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJtb2d1ZGluZy11c2VyIiwic3ViIjoie1wibG9naW5UeXBlXCI6XCJhbmRyb2lkXCIsXCJ1c2VySWRcIjoxMDYzMzk2NzZ9IiwiYXVkIjoibW9ndWRpbmciLCJleHAiOjIwNDQwNjg1ODAsIm5iZiI6MTcyODQ0ODQ4MCwiaWF0IjoxNzI4NDQ5MzgwfQ.FMjIH5WALBAz1NJzHBiJggQItrvBWNnEoLhgCX7ZnC6hwdVLvG9TBCwFaLaPYdqV7FoanP_KnyiIcKfBr_vlOg",
+    "userId": "106339676",
+    "planId": "f42291aed76a9a6a6d7fef432e338ac1"
+  }
+]

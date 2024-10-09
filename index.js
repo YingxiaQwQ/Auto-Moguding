@@ -139,11 +139,19 @@ async function signCheck() {
     currentTime = new Date().toLocaleDateString('zh-CN')
     lastSignType = lastSign.type
     // 判断是否需要签到
-    if (lastSignTime === currentTime && lastSignType === 'END') {
-      console.log(`!!! 今日已签到,签到类型为${lastSignType},今天已经不需要签到了 !!!\n`)
+    if(user.multiple){
+      console.log(`!!! 已配置多次签到,不再检测今日签到 !!!`)
+      if(lastSignType === 'END'){
+        save(user, userId, token, planId, 'START')
+      } else {
+        save(user, userId, token, planId, 'END')
+      }
+    }
+    else if (lastSignTime === currentTime && lastSignType === 'END') {
+      console.log(`!!! 今日已签到,日期为${lastSignTime},签到类型为${lastSignType},今天已经不需要签到了 !!!\n`)
       return
     } else if (lastSignTime === currentTime && lastSignType === 'START') {
-      console.log(`!!! 今日已签到,签到类型为${lastSignType},所以签下班到 !!!\n`)
+      console.log(`!!! 今日已签到,日期为${lastSignTime},签到类型为${lastSignType},所以签下班到 !!!\n`)
       save(user, userId, token, planId, 'END')
     } else {
       console.log(`!!! 今日未签到,即将开始签上班到 !!!\n`)
@@ -185,7 +193,7 @@ function save(user, userId, token, planId, type) {
   axios.post('/attendence/clock/v2/save', data, { headers })
     .then(res => {
       if (res.data.code === 200) {
-        console.log(`签到成功啦,厉不厉害你樱夏！完成时间:${res.data.data.createTime}`)
+        console.log(`签到成功啦,厉不厉害你樱夏！完成时间:${res.data.data.createTime},类型:${type}`)
       } else {
         console.log(res.data)
       }

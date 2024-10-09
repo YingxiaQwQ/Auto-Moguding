@@ -2,6 +2,7 @@
   {
     "signIn": true,
     "autoUpdate": true,
+    "multiple": false,
     "phone": "",
     "password": "",
     "country": "中国",
@@ -12,7 +13,7 @@
     "type": "android",
     "address": "海南省 · 海口市 · 龙华区 · 在王者峡谷附近",
     "longitude": "100.000000",
-    "latitude": "20.0000000",
+    "latitude": "100.000000",
     "UA": null,
     "randomLocation": true,
     "token": "",
